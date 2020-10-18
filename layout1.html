@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        /* This is container */
+        .container
+        {
+            display: flex;
+            height: 100%;
+            width: 100%;
+           
+        }
+        /*Column-left*/
+        .column-left
+        {
+            flex: 1;
+            flex-direction: row;
+        }
+        /*Row-up of column-left*/
+        .row-up
+        {
+            flex: 1;
+            display: flex;
+        }
+        /*First column of row-up*/
+        .column-left-rowup
+        {
+            flex: 4;
+            flex-direction: row;
+        }
+        .upside
+        {
+            flex: 1;
+        }
+        .upside img
+        {
+            padding: 0;
+            margin: 0;
+            height: auto;
+            width: 100%;
+            
+        }
+        /*Second column of row-up*/
+        .column-right-rowup
+        {
+            width: 100%;
+            background-color: royalblue;
+            flex: 1;
+            flex-direction: column;
+        }
+        .menu-1
+        {
+            border: 1px solid black;
+           flex: 1;
+           padding-top: 65%;
+           padding-bottom: 65%;
+        }
+        .menu-1:hover
+        {
+            cursor: pointer;
+            color: white;
+        }
+        .menu-2
+        {
+            border: 1px solid black;
+            flex: 1;
+            padding-top: 65%;
+           padding-bottom: 65%;
+        }
+        .menu-2:hover
+        {
+            cursor: pointer;
+            color: white;
+        }
+        .menu-3
+        {
+            border: 1px solid black;
+            flex: 1;
+            padding-top: 65%;
+           padding-bottom: 65%;
+        }
+        .menu-3:hover
+        {
+            cursor: pointer;
+            color: white;
+        }
+        .menu-4
+        {
+            border: 1px solid black;
+            flex: 1;
+            padding-top: 65%;
+           padding-bottom: 65%;
+        }
+        .menu-4:hover
+        {
+            cursor: pointer;
+            color: white;
+        }
+        .menu-5
+        {
+            border: 1px solid black;
+            flex: 1;
+            padding-top: 65%;
+           padding-bottom: 65%;
+        }
+        .menu-5:hover
+        {
+            cursor: pointer;
+            color: white;
+        }
+        .downside
+        {
+            flex: 1;
+        }
+        .downside img
+        {
+            margin: 0;
+            padding: 0;
+            height: auto;
+            width: 100%;
+        }
+        /*Second row of first column*/
+        .row-down
+        {
+            display: flex;
+            text-align: center;
+        }
+        /*First column of second row*/
+        .row-2-column-1
+        {
+            padding: 5%;
+            flex: 1;
+            background-color: red;
+        }
+        /*Second column of second row*/
+        .row-2-column-2
+        {
+            padding: 5%;
+            flex: 1;
+            background-color: white;
+        }
+        /*Third column of second row*/
+        .row-2-column-3
+        {
+            padding: 5%;
+            flex: 1;
+            background-color: red;
+        }
+        /*fourth column of second row*/
+        .row-2-column-4
+        {
+            padding: 5%;
+            background-color: white;
+            flex: 1;
+        }
+        /*right column*/
+        .column-right
+        {
+            flex: 1;
+        }
+        /*Image of right column*/
+        .column-right img
+        {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!--Container-->
+   <div class="container">
+       <!--left column-->
+        <div class="column-left">
+            <!--Row-up of column-left-->
+            <div class="row-up">
+                <!--First column of row-up-->
+                <div class="column-left-rowup">
+                   <div class="upside">
+                    <img src="https://caphenguyenchat.vn/wp-content/uploads/2013/11/Ca-phe-hat-rang.jpg" alt="Image">
+                   </div>
+                   <div class="downside">
+                    <img src="https://puriocafe.com/images/stories/blog/1-191003-cafe-latte-ngon.jpg" alt="IMage">
+                   </div>
+                </div>
+                <!--Second column of row-up-->
+                <div class="column-right-rowup" style="text-align: center;">
+                    <div class="menu-1">
+                        <p>Menu 1</p>
+                    </div>
+                    <div class="menu-2">
+                        <p>Menu 2</p>
+                    </div>
+                    <div class="menu-3">
+                        <p>Menu 3</p>
+                    </div>
+                    <div class="menu-4">
+                        <p>Menu 4</p>
+                    </div>
+                    <div class="menu-5">
+                        <p>Menu 5</p>
+                    </div>
+                </div>
+            </div>
+            <!--Second row of first column-->
+            <div class="row-down">
+                <!--First column of second row-->
+                <div class="row-2-column-1">
+                    <p>Content 1</p>
+                </div>
+                <!--Second column of second row-->
+                <div class="row-2-column-2">
+                    <p>Content 2</p>
+                </div>
+                <!--Third column of second row-->
+                <div class="row-2-column-3">
+                    <p>Content 3</p>
+                </div>
+                <!--fourth column of second row-->
+                <div class="row-2-column-4">
+                    <p>Content 4</p>
+                </div>
+            </div>
+        </div>
+        <!--right column-->
+        <div class="column-right">
+            <!--Img of right column-->
+            <img src="https://farm8.staticflickr.com/7494/15679395598_29cb1d1c6b_z.jpg" alt="Image">
+        </div>
+   </div>
+</body>
+</html>
