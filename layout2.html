@@ -15,22 +15,17 @@
         {
             display: flex;
             width: 100%;
+            height: 100%;
         }
         .Head
         {
-            height: 200px;
-            width: 100%;
+            height: 70px;
             display: flex;
         }
         .Column-left-Head
         {
             background-color: green;
             flex: 1;
-        }
-        .Column-left-Head p
-        {
-            padding: 10px;
-            
         }
         .Column-right-Head
         {
@@ -39,22 +34,18 @@
         }
         .body
         {
-            height: 600px;
             width: 100%;
             display: flex;
-            flex-direction: row;
         }
         .Column-left-body
         {
             background-color: green;
             flex: 1;
         }
-        .Column-right-Head
+        .Column-right-body
         {
             background-color: blueviolet;
-            flex: 1;
-            flex-direction: row;
-            display: flex;
+            flex: 3;
         }
         .Row-up-body
         {
@@ -69,9 +60,7 @@
         .footer
         {
             display: flex;
-            height: 200px;
             width: 100%;
-            flex-direction: row;
         }
         .Column-left-footer
         {
@@ -91,28 +80,28 @@
         <div class="Head">
             <!--This is left of Head-->
             <div class="Column-left-Head">
-                <p>1</p>
+                1
             </div>
             <!--This is right of Head-->
             <div class="Column-right-Head">
-                <p>2</p>
+                2
             </div>
         </div>
         <!--This is body of layout-->
         <div class="body">
             <!--This is left of body-->
             <div class="Column-left-body">
-                <p>3</p>
+                3
             </div>
             <!--This is right of body-->
             <div class="Column-right-body">
                 <!--This is row up of body-->
                 <div class="Row-up-body">
-                    <p>41</p>
+                    41
                 </div>
                 <!--This is row down of body-->
                 <div class="Row-down-body">
-                    <p>42</p>
+                    42
                 </div>
             </div>
         </div>
@@ -120,10 +109,10 @@
         <div class="footer">
             <!--This is part left of footer-->
             <div class="Column-left-footer">
-                <p>5</p>
+                5
             </div>
             <div class="Column-right-footer">
-                <p>6</p>
+                6
             </div>
         </div>
     </div>
