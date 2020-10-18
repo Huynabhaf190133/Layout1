@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .container
+        {
+            display: flex;
+            width: 100%;
+        }
+        .Head
+        {
+            height: 200px;
+            width: 100%;
+            display: flex;
+        }
+        .Column-left-Head
+        {
+            background-color: green;
+            flex: 1;
+        }
+        .Column-left-Head p
+        {
+            padding: 10px;
+            
+        }
+        .Column-right-Head
+        {
+            background-color: blueviolet;
+            flex: 3;
+        }
+        .body
+        {
+            height: 600px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+        .Column-left-body
+        {
+            background-color: green;
+            flex: 1;
+        }
+        .Column-right-Head
+        {
+            background-color: blueviolet;
+            flex: 1;
+            flex-direction: row;
+            display: flex;
+        }
+        .Row-up-body
+        {
+            background-color: yellow;
+            flex: 1;
+        }
+        .Row-down-body
+        {
+            background-color: antiquewhite;
+            flex: 3;
+        }
+        .footer
+        {
+            display: flex;
+            height: 200px;
+            width: 100%;
+            flex-direction: row;
+        }
+        .Column-left-footer
+        {
+            background-color: green;
+            flex: 1;
+        }
+        .Column-right-footer
+        {
+            background-color: blueviolet;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--This is head of layout-->
+        <div class="Head">
+            <!--This is left of Head-->
+            <div class="Column-left-Head">
+                <p>1</p>
+            </div>
+            <!--This is right of Head-->
+            <div class="Column-right-Head">
+                <p>2</p>
+            </div>
+        </div>
+        <!--This is body of layout-->
+        <div class="body">
+            <!--This is left of body-->
+            <div class="Column-left-body">
+                <p>3</p>
+            </div>
+            <!--This is right of body-->
+            <div class="Column-right-body">
+                <!--This is row up of body-->
+                <div class="Row-up-body">
+                    <p>41</p>
+                </div>
+                <!--This is row down of body-->
+                <div class="Row-down-body">
+                    <p>42</p>
+                </div>
+            </div>
+        </div>
+        <!--This is footer of layout-->
+        <div class="footer">
+            <!--This is part left of footer-->
+            <div class="Column-left-footer">
+                <p>5</p>
+            </div>
+            <div class="Column-right-footer">
+                <p>6</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
