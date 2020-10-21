@@ -13,9 +13,7 @@
         /* This is container */
         .container
         {
-            display: flex;
-            
-           
+            display: flex;           
         }
         /*Column-left*/
         .column-left
@@ -41,11 +39,8 @@
         }
         .upside img
         {
-            padding: 0;
-            margin: 0;
             height: auto;
-            width: 100%;
-            
+            width: 100%;         
         }
         /*Second column of row-up*/
         .column-right-rowup
@@ -110,8 +105,6 @@
         }
         .downside img
         {
-            margin: 0;
-            padding: 0;
             height: auto;
             width: 100%;
         }
@@ -153,12 +146,43 @@
         .column-right
         {
             flex: 1;
+            position: relative;
         }
         /*Image of right column*/
-        .column-right img
+        .img-1 img
         {
             height: 100%;
             width: 100%;
+        }
+        .img-1 h1
+        {
+            color: aqua;
+            font-size: 50px;
+            top: 218px;
+            left: 68px;
+            position: absolute;
+        }
+        /* // Extra small devices (portrait phones, less than 576px)
+        // No media query for `xs` since this is the default in Bootstrap */
+
+        /* // Small devices (landscape phones, 576px and up) */
+        @media (min-width: 576px) { 
+
+         }
+
+        /* // Medium devices (tablets, 768px and up) */
+        @media (min-width: 768px) { 
+
+         }
+
+        /* // Large devices (desktops, 992px and up) */
+        @media (min-width: 992px) { 
+
+        }
+
+        /* // Extra large devices (large desktops, 1200px and up) */
+        @media (min-width: 1200px) { 
+
         }
     </style>
 </head>
@@ -220,8 +244,12 @@
         <!--right column-->
         <div class="column-right">
             <!--Img of right column-->
-            <img src="https://farm8.staticflickr.com/7494/15679395598_29cb1d1c6b_z.jpg" alt="Image">
+            <div class="img-1">
+                <img src="https://farm8.staticflickr.com/7494/15679395598_29cb1d1c6b_z.jpg" alt="Image">
+                <h1>PornHub.Pro</h1>
+            </div>
         </div>
+
    </div>
 </body>
 </html>
